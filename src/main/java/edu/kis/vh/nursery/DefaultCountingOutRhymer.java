@@ -10,7 +10,11 @@ public class DefaultCountingOutRhymer {
 
     public int total = EMPTY_RHYMER_INDICATOR;
 
-    public int total = -1;
+    private int total = -1;
+
+    public int getTotal() {
+        return total;
+    }
 
     public void countIn(int in) {
         if (!isFull())
